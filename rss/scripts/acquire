@@ -5,7 +5,7 @@ import sys
 import rospy
 from std_msgs.msg import String
 from rss.RSSImeasurement import Device
-import thread
+import threading
 from rss.msg import RssData, RssDatum
 
 def eprint(*args, **kwargs):                    #prints errors/warnings to stderr
