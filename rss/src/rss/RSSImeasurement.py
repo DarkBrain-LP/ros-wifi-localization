@@ -71,7 +71,7 @@ class Device:
         cmd = "chopper.py -i {} -t {} -ch {}".format(self.iface,self.ts," ".join(str(ch) for ch in self.channels))
         self.chopper_process = subprocess.Popen(cmd.split(),stdout=subprocess.PIPE)
 
-    def __str__(self):the 
+    def __str__(self): 
         """
         Overloading __str__ to make print statement meaningful
         
